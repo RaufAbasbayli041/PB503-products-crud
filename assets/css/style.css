@@ -1,0 +1,21 @@
+#navbar {
+  padding: 30px 150px;
+ 
+  background-color: black;
+
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar .logo {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#navbar .helpers {
+    font-size: x-large;
+    font-weight: bolder;
+
+}
