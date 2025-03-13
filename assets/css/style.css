@@ -1,21 +1,57 @@
 #navbar {
   padding: 30px 150px;
- 
-  background-color: black;
 
+  background-color: black;
 }
 
 #navbar a {
-    color: white;
+  color: white;
 }
 
 #navbar .logo {
-    font-size: xx-large;
-    font-weight: bolder;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 #navbar .helpers {
-    font-size: x-large;
-    font-weight: bolder;
-
+  font-size: x-large;
+  font-weight: bolder;
 }
+
+.card {
+  box-shadow: 5px;
+  margin-bottom: 30px;
+  width: 300px;
+}
+
+.card .image-wrapper {
+  height: 300px;
+}
+
+.card .image-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  padding-top: 40px;
+}
+
+.tt {
+  padding: 0px 0px;
+}
+
+.card-body {
+  padding: 0px 0px;
+}
+
+.ulList li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+
