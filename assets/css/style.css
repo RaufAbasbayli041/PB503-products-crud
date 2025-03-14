@@ -1,5 +1,5 @@
 #navbar {
-  padding: 30px 150px;
+  padding: 30px 50px;
 
   background-color: black;
 }
@@ -52,6 +52,10 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.table tr:nth-child(2n) td{
+  background-color: #a59e9e;
 }
 
 
