@@ -56,6 +56,94 @@
 
 .table tr:nth-child(2n) td{
   background-color: #a59e9e;
+  
+ 
 }
 
 
+.body td{
+  text-align: left;
+}
+
+/* .loader {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+display: flex;
+justify-content: center;
+align-items: center ;
+opacity: 0.75s;
+}
+
+.spinner-border {
+  height: 60px;
+  width: 60px;
+} */
+
+.detail-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 500px;
+  text-align: center;
+  
+}
+
+.detail-main .data li{
+  list-style-type: none;
+font-size: large;
+}
+
+.detail-main .data .name{
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.detail-main .back {
+  border-radius: 0px;
+  width: 100px;
+}
+
+
+.new-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  
+}
+
+.new-product .data li{
+  list-style-type: none;
+font-size: large;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.new-product .data .name{
+  list-style-type: none;
+  font-size: 70px;
+}
+
+
+.new-product input{
+  border-radius: 5px;
+  background-color: #e9e9e9;
+ 
+}
+
+.new-product form{
+  padding-right: 50px;
+  font-size: larger;
+  width: 180px;
+  display: flex;
+  justify-content: end;
+}

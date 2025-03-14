@@ -10,19 +10,25 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>Details</title>
   </head>
   <body>
-    <nav id="navbar" class="navbar navbar-expand-lg ">
+    <div class="loader"></div>
+    <nav id="navbar" class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div>
-          <a class="navbar-brand logo" href="#">PB503 Products</a>
+          <a class="navbar-brand logo" href="index.html">PB503 Products</a>
         </div>
         <div>
-          <div class="collapse navbar-collapse helpers" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse helpers"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./productsList.html">Products List</a>
@@ -36,19 +42,17 @@
       </div>
     </nav>
 
-
-    <div id="main" >
-      <div class="container">
-        <div class="row cards sceleton "></div>
-      </div>
+    <div class="detail-main">
+      
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./assets/js/main.js" type="module"></script>
+    <script src="./assets/js/detail.js" type="module"></script>
   </body>
 </html>

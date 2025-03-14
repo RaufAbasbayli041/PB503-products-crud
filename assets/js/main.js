@@ -38,7 +38,7 @@ function printCards(products) {
                     <div class="card-body ">
                     <ul class="list-group list-group-flush desc ulList" >
                     <li class="list-group-item " style="height: 62px;" ><b>Title:</b> ${product.title} </li>
-                    <li class="list-group-item"><b>Price:</b> ${product.price} </li>
+                    <li class="list-group-item"><b>Price:</b> ${product.price}$ </li>
                     <li class="list-group-item star"><b>Rating:</b> ${product.rating?.rate} &#127775</li>
                     </ul>
                    
