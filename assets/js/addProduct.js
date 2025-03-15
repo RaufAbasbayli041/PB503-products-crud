@@ -1,53 +1,55 @@
+const form = document.querySelector(".form");
 import { addData } from "./service.js";
 import { endpoint } from "./constants.js";
-const addBtn = document.querySelector("add")
-const input = document.querySelectorAll()
-async function addProduct() {
+
+const addBtn = document.querySelector(".add");
+addBtn.addEventListener("click", async function () {
+  
+  const title = document.querySelector("#title").value.trim();
+  const description = document.querySelector("#description").value.trim();
+  const category = document.querySelector("#category").value.trim();
+  const price = Number(document.querySelector("#price").value.trim());
+  const count = Number(document.querySelector("#count").value.trim());
+
+  const newProduct = {
+    title,
+    description,
+    category,
+    price,
+    rating:count,
+  };
+
+console.log(newProduct)
+
+  if (title && description && category && !isNaN(price) && !isNaN(count)) {
     try {
-        const newProduct= await addData(endpoint.products)
-      
-        drawForm(newProduct)
-    } catch (error) {
-        console.log(error.message)
-    }
-}
-addProduct()
-
-function drawForm(newProduct){
-    const newData = document.querySelector(".new-product");
-  const data = document.createElement("data");
-  data.innerHTML = `  <div class="data" style="width: 100%;height: 100%; padding-top: 50px;">
-            <h1 class="name" style="color: rgb(0, 255, 0); margin-bottom: 40px">
-              Add a New Product
-            </h1>
-            <ul style=" padding: 0;display: flex; justify-content: center; flex-direction: column; align-items: center;">
-              <li >
-                <form action="" >Title</form>
-                <input type="text" placeholder="" style="height: 40px;" class="input"/>
-              </li>
-              <li >
-                <form action="">Description</form>
-                <input type="text" placeholder="" style="height: 40px;" class="input"/>
-              </li>
-              <li >
-                <form action="" >Category</form>
-                <input type="text" placeholder="" style="height: 40px;" class="input"/>
-              </li>
-              <li >
-                <form action="" >Price</form>
-                <input type="text" placeholder="" style="height: 40px;" class="input"/>
-              </li>
-              <li >
-                <form action="" >Count</form>
-                <input type="text" placeholder="" style="height: 40px;" class="input"/>
-              </li>
-             
+      const nw= await addData(endpoint.products, newProduct)
     
-            </ul>
-            <button type="button" class="btn btn-success add">Add New Product</button>
-          </div>`
-      newData.appendChild(data)
+      
+      // form.reset()  ancaq title goturur
+      // console.log(form)
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "New Product has been added ",
+        showConfirmButton: false,
+        timer: 1500
+      });
+    
+    console.log(nw);
 
-}
-
+      
+    } catch (error) {
+      console.log(error.message);
+    }
+    
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Fill all inputs!",
+      footer: '<a href="#">Why do I have this issue?</a>'
+    });
+  }
+});
 

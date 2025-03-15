@@ -16,7 +16,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div>
-          <a class="navbar-brand logo" href="#">PB503 Products</a>
+          <a class="navbar-brand logo" href="index.html">PB503 Products</a>
         </div>
         <div>
           <div
@@ -42,7 +42,36 @@
     </nav>
 
     <div class="new-product">
-       
+      <div class="data" style="width: 100%;height: 100%; padding-top: 50px;">
+        <h1 class="name" style="color: rgb(0, 255, 0); margin-bottom: 40px">
+          Add a New Product
+        </h1>
+        <ul style=" padding: 0;display: flex; justify-content: center; flex-direction: column; align-items: center;">
+          <li >
+            <form action="" class ="form">Title</form>
+            <input type="text" placeholder="" style="height: 40px;" class="input" id="title"/>
+          </li>
+          <li >
+            <form action="" class ="form">Description</form>
+            <input type="text" placeholder="" style="height: 40px;" class="input" id="description"/>
+          </li>
+          <li >
+            <form action="" class ="form">Category</form>
+            <input type="text" placeholder="" style="height: 40px;" class="input" id="category"/>
+          </li>
+          <li >
+            <form action="" class ="form">Price</form>
+            <input type="number" placeholder="" style="height: 40px;" class="input" id="price"/>
+          </li>
+          <li >
+            <form action="" class ="form">Count</form>
+            <input type="number" placeholder="" style="height: 40px;" class="input" id="count"/>
+          </li>
+         
+
+        </ul>
+        <button type="button" class="btn btn-success add">Add New Product</button>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -24,7 +24,7 @@ const addData = async (endpoint, payload) => {
     const response = await axios.post(`${BASE_URL}/${endpoint}`, payload);
     return response;
   } catch (error) {
-    console.log(error.ex);
+    console.log(error.message);
   }
 };
 
